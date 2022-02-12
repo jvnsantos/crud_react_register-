@@ -1,10 +1,10 @@
-import Formulario from "../../components/Formulario/Formulario";
+import Form from "../../components/Form";
 import { Container } from "./styles";
 
 const Login = () => {
   return (
     <Container>
-      <Formulario />
+      <Form />
     </Container>
   );
 };
