@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 
-const Formulario = () => {
+const SignupForm = () => {
   const URL_POST = "http://localhost:8080/api/register";
 
   const [dataForm, setDataForm] = useState({
@@ -74,4 +74,4 @@ const Formulario = () => {
   );
 };
 
-export default Formulario;
+export default SignupForm;
