@@ -1,17 +1,25 @@
 import styled from "styled-components";
+import { background } from "../../assets";
 import { COLORS } from "../../styles/Theme";
 
 export const Container = styled.div`
+background-image: url("static/images/bg.jpg") ;
+background-repeat: no-repeat;
+background-size: cover;
+height: 100vh;
+`;
+
+export const Content = styled.div`
+  width: 50%;
+  height: 100%;
   display: flex;
+  align-items: center;
   justify-content: center;
-  background-color: ${COLORS.cinza.claro};
-  width: fit-content;
-
-
   form {
+    background-color: ${COLORS.cinza.claro};
+    width: 50%;
     display: flex;
     flex-direction: column;
-    margin: 20px;
 
     label {
       color: ${COLORS.branco.default};
@@ -31,8 +39,8 @@ export const Container = styled.div`
       color: ${COLORS.branco.default};
       background-color: ${COLORS.cinza.escuro};
 
-      :hover{
-          cursor: pointer;
+      :hover {
+        cursor: pointer;
       }
     }
   }
