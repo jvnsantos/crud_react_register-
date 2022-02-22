@@ -4,7 +4,6 @@ import { Home, Signup, Login } from "./views";
 function App() {
   return (
     <BrowserRouter>
-      teste
       <Routes>
         <Route>
           <Route element={<Home />} path="/" />

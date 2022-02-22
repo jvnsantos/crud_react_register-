@@ -2,7 +2,7 @@ import axios from "axios";
 import { useState } from "react";
 
 const LoginForm = () => {
-  const URL_AUTH = "http://localhost:8080/api/register";
+  const URL_AUTH = "http://localhost:8080/api/auth";
 
   const [dataForm, setDataForm] = useState({
     email: "",
