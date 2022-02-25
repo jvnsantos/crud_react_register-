@@ -1,10 +1,5 @@
-
 const Home = () => {
-  return (
-   <>
-   Rota: Home
-   </>
-  );
+  return <div> HOME </div>;
 };
 
 export default Home;
