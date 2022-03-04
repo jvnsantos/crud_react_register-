@@ -10,7 +10,7 @@ export const Login = () => {
   const [password, setPassword] = useState("");
 
   const handleLogin = async () => {
-    if (email && password) {
+    if (password) {
       const isLogged = await auth.signin(email, password);
       console.log(isLogged);
       if (isLogged) {

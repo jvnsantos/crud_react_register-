@@ -1,6 +1,7 @@
 export type User = {
   id: number;
   name: string;
-  email: string;
+  email: string | undefined;
   password?: string;
+  isLogged?: boolean;
 };
