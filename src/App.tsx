@@ -1,9 +1,9 @@
-import "./App.css";
-import { Home, Private } from "./pages";
-import { Routes, Route, Link } from "react-router-dom";
-import { RequireAuth } from "./contexts/Auth/RequireAuth";
 import { useContext } from "react";
+import { Link, Route, Routes } from "react-router-dom";
+import "./App.css";
 import { AuthContext } from "./contexts/Auth/AuthContext";
+import { RequireAuth } from "./contexts/Auth/RequireAuth";
+import { Home, Private, Register } from "./pages";
 
 function App() {
   const auth = useContext(AuthContext);
@@ -33,6 +33,7 @@ function App() {
       <hr />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/register" element={<Register />} />
         <Route
           path="/private"
           element={
