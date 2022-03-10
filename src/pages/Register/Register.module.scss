@@ -1,0 +1,22 @@
+@import "../../styles/theme";
+
+section {
+  width: 100%;
+  height: 100%;
+  flex: auto;
+  background-color: $dark_grey;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+
+  label {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  input {
+  }
+}

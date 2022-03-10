@@ -1,0 +1,17 @@
+// Grey Pallet
+$dark_grey: #202225;
+$middle_grey: #36393f;
+$light_grey: #515458;
+
+// Text Pallet
+$text_disabled: #afb2b5;
+$text_white: #ffffff;
+
+// Devices Sizes
+$screen-desktop-min: 1024px;
+
+@mixin desktop {
+  @media (min-width: #{$screen-desktop-min}) {
+    @content;
+  }
+}

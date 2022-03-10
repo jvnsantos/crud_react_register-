@@ -1,0 +1,12 @@
+nav {
+  a {
+    color: #000;
+    display: inline-block;
+    margin: 0 10px;
+
+    &:hover {
+      text-decoration: none;
+      transition: 1s;
+    }
+  }
+}
